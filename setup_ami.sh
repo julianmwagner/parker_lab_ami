@@ -14,17 +14,10 @@ conda install -y scipy pandas numba scikit-image scikit-learn statsmodels bokeh 
 pip install arviz;
 pip install altair-catplot;
 pip install bebi103;
-wget https://s3.amazonaws.com/bebi103.caltech.edu/2018/data/data.tar;
-tar -xvf data.tar;
-rm ./data.tar;
 jupyter labextension install --no-build jupyterlab_bokeh;
 jupyter labextension install --no-build @ijmbarr/jupyterlab_spellchecker;
 jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager;
 jupyter labextension install --no-build @pyviz/jupyterlab_pyviz;
 jupyter lab build;
 echo 'export PS1="\[\e[1;32m\]\u\[\e[0m\]@\e[1;36m\]\h\[\e[0m\] [\w]\n% "' >> ~/.bashrc;
-echo 'alias rm="rm -i"' >> ~/.bashrc;
-echo 'alias mv="mv -i"' >> ~/.bashrc;
-echo 'alias cp="cp -i"' >> ~/.bashrc;
-echo 'alias ls="ls -FGh"' >> ~/.bashrc;
 echo 'export LSCOLORS="gxfxcxdxCxegedabagacad"' >> ~/.bashrc;
