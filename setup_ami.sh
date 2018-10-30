@@ -10,7 +10,11 @@ conda update -q -y conda;
 conda install -y numpy cython pystan;
 conda config --add channels conda-forge;
 conda config --add channels defaults;
+conda config --add channels bioconda
 conda install -y scipy pandas numba scikit-image scikit-learn statsmodels bokeh altair holoviews watermark tqdm matplotlib seaborn ipython jupyter jupyterlab nodejs xarray netcdf4;
+conda install trinity trinotate
+conda install -c r r-essentials mro-base
+conda install -r-sleuth
 pip install arviz;
 pip install altair-catplot;
 pip install bebi103;
