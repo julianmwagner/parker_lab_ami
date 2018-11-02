@@ -28,7 +28,7 @@ sudo apt-get install r-base-dev
 sudo apt-get install libcurl4-openssl-dev libssl-dev
 
 #Kallisto
-conda create -n kallisto_env
+conda create -y -n kallisto_env
 source activate kallisto_env
 conda install -y -c bioconda kallisto
 source deactivate
