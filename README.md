@@ -7,4 +7,5 @@ In order to get the machine set up, I ran the following steps:
 - run `git clone https://github.com/julianmwagner/parker_lab_ami/`
 - run `bash ~/parker_lab_ami/setup_ami.sh` (this will take a while as it downloads and installs quite a few packages)
 - launch the R console by typing `R`
-- run the commands one at a time from the 
+- run the commands one at a time **in the R console** from the file `~/parker_lab_ami/r_installs.txt`
+- you will likely need to exit and connect to the instance again to see all the changes to the .bashrc file take effect
